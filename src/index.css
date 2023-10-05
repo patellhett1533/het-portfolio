@@ -1,13 +1,184 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: mobileDisplay;
+  src: url(./font/tusker-grotesk-font/TuskerGrotesk-1800Super.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: display;
+  src: url(./font/tusker-grotesk-font/TuskerGrotesk-2600Semibold.ttf);
+}
+
+@font-face {
+  font-family: regular;
+  src: url(./font/Neue-Montreal/NeueMontreal-MediumItalic.otf);
+}
+
+@font-face {
+  font-family: extra;
+  src: url(./font/migra/Migra-Extrabold.ttf);
+}
+
+:root{
+  /* color */
+  --container-color: #cf2e2e;
+  --background-color: #0e0e10;
+  --box-color: #121212;
+  --heading-color: #ffffffe8;
+  --title-color: #ffffffce;
+  --text-color: #ffffff9a;
+
+}
+
+body {
+  margin: 0 0;
+  padding: 0 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font),sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url(./assets/8.png);
+  background-attachment: fixed;
+  overflow-x: hidden;
+  background-size: cover;
+  cursor: none;
+  overflow-y: scroll;
+}
+
+.hover{
+  mix-blend-mode: difference;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.about-txt p .char{
+  transform: rotateY(90deg);
+  opacity: 0;
+}
+
+.skill-text .char{
+  transform:  translateX(-1000px);
+  transition: transform 0.5s;
+}
+
+.skill-tag li{
+  transform:  translateX(1000px);
+  transition: transform 0.5s;
+}
+
+.connect-text .char{
+  transform:  translateX(-1000px);
+  transition: transform 0.5s;
+}
+.contact-text .char{
+  transform:  translateX(1000px);
+  transition: transform 0.5s;
+}
+
+.imghover{
+  transform: scale(2);
+}
+
+.display-text{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.display-text .char{
+  transform:  translateY(500px);
+  transition: transform 0.5s;
+}
+
+.project-title .char{
+  transform:  translateY(500px);
+  transition: transform 0.5s
+}
+
+/* locomotive scroll */
+html.has-scroll-smooth {
+  overflow: hidden; 
+}
+
+html.has-scroll-dragging {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+.has-scroll-smooth body {
+  overflow: hidden; 
+}
+
+.has-scroll-smooth [data-scroll-container] {
+  min-height: 100vh; 
+}
+
+[data-scroll-direction="horizontal"] [data-scroll-container] {
+  height: 100vh;
+  display: inline-block;
+  white-space: nowrap; 
+}
+
+[data-scroll-direction="horizontal"] [data-scroll-section] {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  height: 100%; 
+}
+
+.c-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 11px;
+  height: 100%;
+  transform-origin: center right;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0; 
+}
+
+  .c-scrollbar:hover {
+    transform: scaleX(1.45); 
+}
+
+  .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+    opacity: 1; 
+}
+
+[data-scroll-direction="horizontal"] .c-scrollbar {
+    width: 100%;
+    height: 10px;
+    top: auto;
+    bottom: 0;
+    transform: scaleY(1); 
+}
+
+[data-scroll-direction="horizontal"] .c-scrollbar:hover {
+      transform: scaleY(1.3); 
+}
+
+.c-scrollbar_thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  width: 7px;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab; 
+}
+  .has-scroll-dragging .c-scrollbar_thumb {
+    cursor: -webkit-grabbing;
+    cursor: grabbing; 
+}
+  [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+    right: auto;
+    bottom: 0; 
 }
