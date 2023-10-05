@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.789d8139.css",
-    "main.js": "/static/js/main.fc523749.js",
-    "static/media/8.png": "/static/media/8.1310d64a68ed037b2078.png",
-    "static/media/resume.pdf": "/static/media/resume.acb092099902dbdb4a56.pdf",
-    "static/media/social.png": "/static/media/social.6b128aaf2c885dea5a43.png",
-    "static/media/dashboard.png": "/static/media/dashboard.519f0bbe542b86979eea.png",
-    "static/media/Migra-Extrabold.ttf": "/static/media/Migra-Extrabold.3c913ff79e001a1128c7.ttf",
-    "static/media/TuskerGrotesk-2600Semibold.ttf": "/static/media/TuskerGrotesk-2600Semibold.3a484f7fa71f68b7e7a8.ttf",
-    "static/media/TuskerGrotesk-1800Super.ttf": "/static/media/TuskerGrotesk-1800Super.73f95715192ed4455246.ttf",
-    "static/media/bloghome.png": "/static/media/bloghome.8e798dd1dc34cce8a3b4.png",
-    "static/media/stockpage.png": "/static/media/stockpage.ec2e9b1ae8a3b15cd708.png",
-    "static/media/NeueMontreal-MediumItalic.otf": "/static/media/NeueMontreal-MediumItalic.262438e4ccb1e999a018.otf",
-    "index.html": "/index.html",
-    "main.789d8139.css.map": "/static/css/main.789d8139.css.map",
-    "main.fc523749.js.map": "/static/js/main.fc523749.js.map"
+    "main.css": "/het-portfolio/static/css/main.3d3a7613.css",
+    "main.js": "/het-portfolio/static/js/main.7b3f6f40.js",
+    "static/media/8.png": "/het-portfolio/static/media/8.1310d64a68ed037b2078.png",
+    "static/media/resume.pdf": "/het-portfolio/static/media/resume.acb092099902dbdb4a56.pdf",
+    "static/media/social.png": "/het-portfolio/static/media/social.6b128aaf2c885dea5a43.png",
+    "static/media/dashboard.png": "/het-portfolio/static/media/dashboard.519f0bbe542b86979eea.png",
+    "static/media/Migra-Extrabold.ttf": "/het-portfolio/static/media/Migra-Extrabold.3c913ff79e001a1128c7.ttf",
+    "static/media/TuskerGrotesk-2600Semibold.ttf": "/het-portfolio/static/media/TuskerGrotesk-2600Semibold.3a484f7fa71f68b7e7a8.ttf",
+    "static/media/TuskerGrotesk-1800Super.ttf": "/het-portfolio/static/media/TuskerGrotesk-1800Super.73f95715192ed4455246.ttf",
+    "static/media/bloghome.png": "/het-portfolio/static/media/bloghome.8e798dd1dc34cce8a3b4.png",
+    "static/media/stockpage.png": "/het-portfolio/static/media/stockpage.ec2e9b1ae8a3b15cd708.png",
+    "static/media/NeueMontreal-MediumItalic.otf": "/het-portfolio/static/media/NeueMontreal-MediumItalic.262438e4ccb1e999a018.otf",
+    "index.html": "/het-portfolio/index.html",
+    "main.3d3a7613.css.map": "/het-portfolio/static/css/main.3d3a7613.css.map",
+    "main.7b3f6f40.js.map": "/het-portfolio/static/js/main.7b3f6f40.js.map"
   },
   "entrypoints": [
-    "static/css/main.789d8139.css",
-    "static/js/main.fc523749.js"
+    "static/css/main.3d3a7613.css",
+    "static/js/main.7b3f6f40.js"
   ]
 }
